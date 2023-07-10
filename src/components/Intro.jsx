@@ -9,7 +9,7 @@ function Intro() {
         id="intro"
         className='h-screen w-full flex flex-col items-center justify-center pt-2 pb-2 bg-carafe-500'
     >
-      <div className='mb-20 flex flex-col items-center text-sanddollar-500 py-5 px-5'>
+      <div className='mb-20 flex flex-col items-center text-sanddollar-500 py-5 px-5 text-center'>
         <h1 className='text-tan-500 text-5xl'>
           Daniel Kumlin
         </h1>

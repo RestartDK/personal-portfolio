@@ -1,6 +1,6 @@
 function ProjectItem({key, title, projectUrl, imgUrl, stack}) {
   return (
-    <div className="rounded-md border-2 border-sanddollar-500 drop-shadow-md">
+    <div className="rounded-md border-2 border-sanddollar-500 drop-shadow-md overflow-hidden">
       <img 
         src={imgUrl} 
         alt={title} 

@@ -8,7 +8,7 @@ function Projects() {
         <h1 className="flex text-tan-500 text-4xl py-4 ">
           My Projects
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-wrap gap-4 m-20 px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-20">
           {projects.map((project) => (
             <ProjectItem 
               key={project.id}
