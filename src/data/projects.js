@@ -2,22 +2,22 @@ export default [
     {
         id: 1,
         title: 'EmpStats',
-        projectUrl: '',
-        imgUrl:'/assets/portfolioweb.png',
-        stack: ['Java', 'Graph API', 'Spring']
+        projectUrl: 'https://github.com/RestartDK/Empstats',
+        imgUrl:'/assets/empstats.svg',
+        stack: ['Java', 'Graph API', 'Gradle']
     },
     {
         id: 2,
         title: 'Portfolio Website',
-        projectUrl: '',
+        projectUrl: 'https://github.com/RestartDK/personal-portfolio',
         imgUrl: '/assets/portfolioweb.png',
         stack: ['Javascript', 'React', 'Vite', 'TailwindCSS']
     },
     {
         id: 3,
         title: 'Notion Task Deletion Automation',
-        projectUrl: '',
-        imgUrl:'/assets/portfolioweb.png',
+        projectUrl: 'https://github.com/RestartDK/NotionDeletionAutomation',
+        imgUrl:'/assets/notiondeletion.svg',
         stack: ['Python', 'Notion API', 'Launchd'] 
     }
 ]

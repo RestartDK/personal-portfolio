@@ -1,20 +1,28 @@
+const images = [
+  { id: 1, src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", alt: "react" },
+  { id: 2, src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", alt: "java" },
+  { id: 3, src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", alt: "javascript" },
+  { id: 4, src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", alt: "python" },
+  { id: 5, src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg", alt: "pandas" },
+]
 
-import reactPic from '/assets/react.svg'
-import javaPic from '/assets/java.svg'
-import javascriptPic from '/assets/javascript.svg'
-import pythonPic from '/assets/python.svg'
-import pandasPic from '/assets/pandas.svg'
-
-const images = [reactPic, javaPic, javascriptPic, pythonPic, pandasPic];
 
 function Languages() {
   return (
-    <div id="passion" className="h-screen w-full flex flex-col flex-wrap items-center justify-center pt-2 pb-2 bg-carafe-500 font-ysabeau px-2">
-      <h1 className="text-center text-tan-500 text-5xl"> 
+    <div id="languages" className="flex flex-col h-screen w-full items-center justify-start py-2 px-11 bg-carafe-400 font-ysabeau">
+      <h1 className="text-center text-tan-500 text-5xl mb-6"> 
         Coding Languages I Know 
       </h1>
-      
-      
+      <div className="grid grid-cols-3 gap-3">
+        {images.map((image) => (
+          <img
+            key={image.id}
+            src={image.src}
+            alt={image.alt}
+            className='w-32 h-32 object-cover'
+          />
+        ))}
+      </div>     
     </div>
   )
 }

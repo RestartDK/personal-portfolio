@@ -1,6 +1,5 @@
 import Intro from './components/Intro'
 import Passion from './components/Passion'
-import History from './components/History'
 import Projects from './components/Projects'
 import Papers from './components/Papers'
 import Contact from './components/Contact'
@@ -14,7 +13,6 @@ function App() {
       <Intro />
       <Passion />
       <Languages />
-      <History />
       <Projects />
       <Papers />
       <Contact />
