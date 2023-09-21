@@ -5,6 +5,7 @@ import {AiFillLinkedin} from 'react-icons/ai'
 import {FaGithub} from 'react-icons/fa'
 import {AiFillInstagram} from 'react-icons/ai'
 import { AiOutlineLoading } from "react-icons/ai";
+import emailcredentials from "../data/emailcredentials";
 
 function Contact() {
   const {register, handleSubmit, reset, formState: {errors}} = useForm();
@@ -14,10 +15,10 @@ function Contact() {
     setIsLoading(true);
 
     emailjs.send(
-      'service_18b833h',
-      'template_whc30ce',
+      emailcredentials.serviceID,
+      emailcredentials.tempalteID,
       formData,
-      '42h2KfMLTCnEWapja'
+      emailcredentials.userID
     ).then(
       (result) => {
         setIsLoading(false);
