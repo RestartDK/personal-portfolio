@@ -22,4 +22,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-public/data/emailcredentials.js
+src/data/emailcredentials.js
